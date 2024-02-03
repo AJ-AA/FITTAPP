@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondodeapp"
+
+    tools:context=".ui.NewScoreMaleActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="186dp"
+        android:layout_height="44dp"
+        android:text="HELLO!! $USER"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/Endurance"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/Endurance"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/Agility"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/Agility"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/Pullups"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/Pullups"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="141dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="32dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/resistencia"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/agilidad"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <SeekBar
+        android:id="@+id/enduranceseekBar"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:max="10"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <SeekBar
+        android:id="@+id/AgilityseekBar2"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:max="10"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <SeekBar
+        android:id="@+id/BarhangseekBar3"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:max="10"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="550dp" />
+
+    <Button
+        android:id="@+id/save_score"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/save_score"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="652dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/dominadas"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="400dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--//NP:141350 ARENAL ARMESTO ANTONIO JOSE-->

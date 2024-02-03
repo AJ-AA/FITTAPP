@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.FITTAPP" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.FITTAPP" parent="Base.Theme.FITTAPP" />
+</resources>
+
+    <!--//NP:141350 ARENAL ARMESTO ANTONIO JOSE-->

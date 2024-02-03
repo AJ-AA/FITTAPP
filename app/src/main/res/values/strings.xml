@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name" translatable="false">FITTAPP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="TermsAndConditions">Terms and conditions</string>
+    <string name="Saved_scores">Saved scores</string>
+    <string name="language_options">language options</string>
+    <string name="date">Date</string>
+    <string name="Close">Close</string>
+    <string name="Delete">Delete54</string>
+    <string name="Select_photo">Select photo</string>
+    <string name="prompt_languages">Language</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="salute">Hello user: </string>
+
+
+
+
+    <!-- genders strings -->
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+
+    <!-- new score -->
+
+
+    <string name="Endurance">Endurance</string>
+    <string name="pointsendurance">Points Endurance</string>
+    <string name="Agility">Agility</string>
+    <string name="pointsagility">Points Agility</string>
+    <string name="Barhang">Bar hang</string>
+    <string name="pointsbarhang">Points Bar hang</string>
+    <string name="Pullups">Pullups</string>
+    <string name="pointspullups">Points pull-ups</string>
+    <string name="save_score">save score</string>
+
+    <!-- main page strings -->
+    <string name="Bestscoretodate">______Best score to date:______</string>
+    <string name="RegisterNewScore">New Score</string>
+    <string name="ViewScores">View Scores</string>
+
+    <!-- terms -->
+    <string name="welcome">Welcome to FitTest. By downloading and using our application, located in Spain, you agree to comply with the following terms and conditions:</string>
+    <string name="terms">Use of FitTest: FitTest offers tools for the evaluation and improvement of physical performance, intended for personal and non-commercial use.
+Account Registration and Security: Registration is required to access certain features of the application. You are responsible for maintaining the confidentiality of your account and password.
+Privacy and Protection of Personal Data: We respect your privacy. The collection and use of personal data is governed by our Privacy Policy, in accordance with the Organic Law on the Protection of Personal Data and Guarantee of Digital Rights (LOPDGDD).
+Intellectual Property: All FitTest content, including text, graphics, logos and software, is the property of FitTest or its licensors and is protected by intellectual property laws.
+Limitation of liability: FitTest is not responsible for any damages that may arise from the use of the application, except in the scope of liability that the applicable law expressly does not allow to be excluded.
+Modifications to the Terms and Conditions: We reserve the right to modify these terms at any time. Your continued use of the application constitutes acceptance of such changes.
+Applicable Law and Jurisdiction: These terms are governed by the laws of Spain and any dispute related to them will be subject to the jurisdiction of the Spanish courts.</string>
+
+
+
+</resources>
+
+
+    <!--//NP:141350 ARENAL ARMESTO ANTONIO JOSE-->

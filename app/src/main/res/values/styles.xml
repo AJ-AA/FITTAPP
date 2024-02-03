@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="WhiteHint">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="AppTheme.CustomSpinner" parent="Theme.Design.Light.NoActionBar">
+        <item name="android:textColor">#FFFFFF</item> <!-- Cambia el color del texto de los elementos desplegables -->
+        <item name="android:background">#000000</item> <!-- Fondo negro -->
+
+    </style>
+
+</resources>
+
+
+    <!--//NP:141350 ARENAL ARMESTO ANTONIO JOSE-->

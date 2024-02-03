@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="remember_me">Recuerdame</string>
+    <string name="login">Inicio</string>
+    <string name="register">Registrarse</string>
+    <string name="TermsAndConditions">Terminos y condiciones</string>
+    <string name="Saved_scores">Puntuaciones guardadas</string>
+    <string name="language_options">Opciones de lenguaje</string>
+    <string name="date">Fecha</string>
+    <string name="Close">Cerrar</string>
+    <string name="Delete">Borrar</string>
+    <string name="Select_photo">Seleccionar foto</string>
+    <string name="prompt_languages">Idioma</string>
+    <string name="english">Inglés</string>
+    <string name="spanish">Español</string>
+    <string name="salute">Hola usuario: </string>
+
+
+
+
+
+
+    <!-- genders strings -->
+    <string name="Male">Hombre</string>
+    <string name="Female">Mujer</string>
+
+
+    <!-- new score strings -->
+
+    <string name="Endurance">Resistencia</string>
+    <string name="pointsendurance">Puntos Resistencia</string>
+    <string name="Agility">Agilidad</string>
+    <string name="pointsagility">Puntos Agilidad</string>
+    <string name="Barhang">Suspensión en barra</string>
+    <string name="pointsbarhang">Puntos suspensión en barra</string>
+    <string name="Pullups">Dominadas</string>
+    <string name="pointspullups">Puntos Dominadas</string>
+    <string name="save_score">Guardar puntuación</string>
+
+    <!-- main page strings -->
+    <string name="Bestscoretodate">_______Mejor puntuación:_______</string>
+    <string name="RegisterNewScore">Nuevo registro</string>
+    <string name="ViewScores">Ver puntuaciones</string>
+
+
+
+
+    <!-- terms -->
+    <string name="welcome">Bienvenido a FitTest. Al descargar y utilizar nuestra aplicación, ubicada en España, aceptas cumplir con los siguientes términos y condiciones:</string>
+    <string name="terms">Uso de FitTest: FitTest ofrece herramientas para la evaluación y mejora del rendimiento físico, destinadas a uso personal y no comercial.
+Registro de cuenta y seguridad: es necesario registrarse para acceder a ciertas funciones de la aplicación. Usted es responsable de mantener la confidencialidad de su cuenta y contraseña.
+Privacidad y Protección de Datos Personales: Respetamos su privacidad. La recogida y uso de datos personales se rige por nuestra Política de Privacidad, de acuerdo con la Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD).
+Propiedad intelectual: todo el contenido de FitTest, incluidos textos, gráficos, logotipos y software, es propiedad de FitTest o sus licenciantes y está protegido por las leyes de propiedad intelectual.
+Limitación de responsabilidad: FitTest no se hace responsable de los daños que pudieran derivarse del uso de la aplicación, salvo en el ámbito de responsabilidad que expresamente la ley aplicable no permite excluir.
+Modificaciones a los Términos y Condiciones: Nos reservamos el derecho de modificar estos términos en cualquier momento. Su uso continuado de la aplicación constituye la aceptación de dichos cambios.
+Ley Aplicable y Jurisdicción: Estos términos se rigen por las leyes de España y cualquier disputa relacionada con ellos estará sujeta a la jurisdicción de los tribunales españoles.</string>
+
+
+</resources>
+
+
+    <!--//NP:141350 ARENAL ARMESTO ANTONIO JOSE-->
