@@ -22,7 +22,7 @@ Alcance del proyecto por cubrir:
 
 En el Feedback2 se añadirá:
 
-1-Nuevos registros personalizados con un menú de preferencias con al menos 3 opciones que modifiquen el comportamiento de la aplicación. .
+1-Nuevos registros personalizados con un menú de preferencias con al menos 3 opciones que modifiquen el comportamiento de la aplicación.
 
 2-Muestra de la puntuación más alta utilizando y generando datos en la aplicación disponibles a través de un servidor (implementado con Spring).
 
