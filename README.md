@@ -20,14 +20,22 @@ Requisitos y funcionalidades:
 
 Alcance del proyecto por cubrir:
 
-En el Feedback2 se añadirá:
+En el Feedback2 se añadió:
 
-1-Nuevos registros personalizados con un menú de preferencias con al menos 3 opciones que modifiquen el comportamiento de la aplicación.
+-7 Activitys
 
-2-Muestra de la puntuación más alta utilizando y generando datos en la aplicación disponibles a través de un servidor (implementado con Spring).
+-Mapas de Google comentados
 
-3-Información útil para la aplicación en un mapa (con Google Maps o MapBox) utlizando el GPS del dispositvo para realizar alguna función sobre el mapa de la aplicación.
+-Menu con 3 opciones para modo oscuro, idioma y silenciar notificaciones
 
-4-Notificaciones del sistema.
+-Se añadieron notificaciones en el movil para el acceso correcto a la APP
 
-5-Interacción de varios usuarios a la vez en la APP.
+-Funcionalidad con Google Chrome
+
+-Posibilidad de enviar un texto a otra app instalada
+
+-Registro en la base de datos de "puntuaciones" segun el "genero" del usuario
+
+-Realizar llamadas desde la APP
+
+
