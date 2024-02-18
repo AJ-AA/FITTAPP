@@ -18,7 +18,7 @@ Requisitos y funcionalidades:
 6-Acceso a la Cámara para Avatar: La aplicación permite a los usuarios tomar una foto utilizando la cámara de su dispositivo y guardarla como su avatar de perfil.
 
 
-Alcance del proyecto por cubrir:
+*********Alcance del proyecto por cubierto en la nueva entrega**********
 
 En el Feedback2 se añadió:
 
