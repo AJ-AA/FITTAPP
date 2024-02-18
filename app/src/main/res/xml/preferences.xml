@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="modo_oscuro"
+        android:title="@string/modo_oscuro"
+        android:summaryOn="@string/oscuro_activado"
+        android:summaryOff="@string/oscuro_desactivado"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="notificaciones"
+        android:title="@string/notificaciones"
+        android:summaryOn="@string/notif_activadas"
+        android:summaryOff="@string/notif_desactivadas"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="idioma"
+        android:title="@string/idioma"
+        android:dialogTitle="@string/seleccionar_idioma"
+        android:entries="@array/language_options"
+        android:entryValues="@array/language_options"
+        android:defaultValue="English" />
+
+</PreferenceScreen>

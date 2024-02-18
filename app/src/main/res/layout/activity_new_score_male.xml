@@ -9,111 +9,128 @@
     tools:context=".ui.NewScoreMaleActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="186dp"
-        android:layout_height="44dp"
-        android:text="HELLO!! $USER"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="32dp" />
-
-    <TextView
         android:id="@+id/Endurance"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:text="@string/Endurance"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Agility"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:text="@string/Agility"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Pullups"
         android:layout_width="150dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="328dp"
         android:text="@string/Pullups"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="370dp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="141dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/resistencia"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="130dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/agilidad"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="130dp"
         tools:ignore="MissingConstraints" />
-
 
     <SeekBar
         android:id="@+id/enduranceseekBar"
         android:layout_width="150dp"
         android:layout_height="25dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="148dp"
         android:max="10"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <SeekBar
         android:id="@+id/AgilityseekBar2"
         android:layout_width="150dp"
         android:layout_height="25dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="424dp"
         android:max="10"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <SeekBar
-        android:id="@+id/BarhangseekBar3"
+        android:id="@+id/pullUpsSeekBar"
         android:layout_width="150dp"
         android:layout_height="25dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="424dp"
         android:max="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="550dp" />
+        style="@style/SeekBarWhiteText"
+        />
 
     <Button
         android:id="@+id/save_score"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="56dp"
         android:text="@string/save_score"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="652dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/dominadas"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="400dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

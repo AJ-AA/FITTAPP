@@ -16,6 +16,19 @@
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
     <string name="salute">Hello user: </string>
+    <string name="Share_Text">Share Text</string>
+    <string name="Open_Web_Page">Google</string>
+    <string name="Make_Call">Make_Call</string>
+    <string name="modo_oscuro">Dark Mode</string>
+    <string name="oscuro_activado">Dark mode enabled</string>
+    <string name="oscuro_desactivado">Dark mode disabled</string>
+    <string name="notificaciones">Notifications</string>
+    <string name="notif_activadas">Notifications enabled</string>
+    <string name="notif_desactivadas">Notifications disabled</string>
+    <string name="idioma">Language</string>
+    <string name="seleccionar_idioma">Select Language</string>
+
+
 
 
 

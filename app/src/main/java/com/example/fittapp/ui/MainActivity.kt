@@ -1,5 +1,7 @@
 package com.example.fittapp.ui
 import DatabaseHelper
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -10,8 +12,15 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.fittapp.R
 import android.content.Context
 import android.content.SharedPreferences
+import android.content.pm.PackageManager
 import android.content.res.Configuration
+import android.os.Build
+import androidx.core.app.ActivityCompat
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat
 import java.util.Locale
+import android.Manifest
 
 //NP:141350 ARENAL ARMESTO ANTONIO JOSE
 
@@ -29,11 +38,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var spinnerLanguage: Spinner
     private var selectedLanguage: String = "en" // Valor predeterminado en inglés
     private var currentLanguage: String = "en" // Idioma actual de la aplicación
+    companion object {
+        const val NOTIFICATION_PERMISSION_CODE = 1001
+    }
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
         dbHelper = DatabaseHelper(this)
 
         // Inicializa las variables de SharedPreferences
@@ -42,7 +56,6 @@ class MainActivity : AppCompatActivity() {
 
         // Configura el Spinner y su adaptador
 
-        setContentView(R.layout.activity_main)
         spinnerLanguage = findViewById(R.id.spinner_language)
 
         val languageOptions = arrayOf("English", "Español")  // Lista de opciones de idioma
@@ -78,27 +91,31 @@ class MainActivity : AppCompatActivity() {
             passwordEditText.setText(savedPassword)
             rememberMeCheckBox.isChecked = true
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.POST_NOTIFICATIONS), NOTIFICATION_PERMISSION_CODE)
+            }
+        }
+
 
         // Botón para iniciar sesión
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
+            val (loginSuccess, gender) = login(username, password)
 
-            if (login(username, password)) {
-                // Inicio de sesión exitoso, redirige a la actividad MainPage
-                val intent = Intent(this, MainPage::class.java)
-                intent.putExtra("USERNAME", username)
-
-                if (rememberMeCheckBox.isChecked) {
-                    // Guardar las credenciales en las preferencias compartidas
-                    editor.putString("USERNAME", username)
-                    editor.putString("PASSWORD", password)
-                    editor.apply()
+            if (loginSuccess) {
+                val intent = Intent(this, MainPage::class.java).apply {
+                    putExtra("USERNAME", username)
+                    putExtra("GENDER", gender) // Pasar el género a MainPage
                 }
-
+                if (rememberMeCheckBox.isChecked) {
+                    editor.putString("USERNAME", username)
+                        .putString("PASSWORD", password)
+                        .apply()
+                }
                 startActivity(intent)
             } else {
-                // Mostrar mensaje de error en caso de inicio de sesión fallido
                 Toast.makeText(this, "Inicio de sesión fallido", Toast.LENGTH_SHORT).show()
             }
         }
@@ -163,25 +180,63 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Función para realizar el inicio de sesión
-    private fun login(username: String, password: String): Boolean {
+    private fun login(username: String, password: String): Pair<Boolean, String> {
         val db = dbHelper.readableDatabase
-        val columns = arrayOf("username")
+        // Asegúrate de incluir la columna de género en tus columnas seleccionadas
+        val columns = arrayOf("username", "gender")
         val selection = "username = ? AND password = ?"
         val selectionArgs = arrayOf(username, password)
-
         val cursor: Cursor = db.query("users", columns, selection, selectionArgs, null, null, null)
 
-        val result = cursor.count > 0
+        // Inicializar género como cadena vacía
+        var gender = ""
+        if (cursor.moveToFirst()) {
+            // Obtener el género del usuario si la autenticación es exitosa
+            gender = cursor.getString(cursor.getColumnIndex("gender"))
+        }
+        val loginSuccess = cursor.count > 0
         cursor.close()
         db.close()
 
-        return result
+        // Devolver si el inicio de sesión fue exitoso y el género del usuario
+        return Pair(loginSuccess, gender)
     }
+
 
     // Función para abrir la actividad de Términos y Condiciones
     fun openTermsActivity(view: View) {
         val intent = Intent(this, TermsActivity::class.java)
         startActivity(intent)
+    }
+
+    private fun showLoginSuccessNotification(username: String) {
+        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val notificationChannelId = "login_success_channel"
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(notificationChannelId, "Login Notifications", NotificationManager.IMPORTANCE_DEFAULT).apply {
+                description = "Used for login success notifications"
+            }
+            notificationManager.createNotificationChannel(channel)
+        }
+
+        val builder = NotificationCompat.Builder(this, notificationChannelId).apply {
+            setSmallIcon(R.drawable.notification_icon) // Asegúrate de que este recurso exista y cierra correctamente el paréntesis aquí
+            setContentTitle("Inicio de sesión exitoso")
+            setContentText("Bienvenido(a), $username")
+            priority = NotificationCompat.PRIORITY_DEFAULT
+        }
+
+
+        notificationManager.notify(1, builder.build())
+    }
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == NOTIFICATION_PERMISSION_CODE && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            // Aquí podrías mostrar una notificación de prueba o simplemente no hacer nada
+        } else {
+            Toast.makeText(this, "El permiso de notificación es necesario para algunas funcionalidades de la app.", Toast.LENGTH_SHORT).show()
+        }
     }
 
 }

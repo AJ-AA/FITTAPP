@@ -11,6 +11,13 @@
         <item name="android:background">#000000</item> <!-- Fondo negro -->
 
     </style>
+    <style name="SeekBarWhiteText" parent="Widget.AppCompat.SeekBar.Discrete">
+        <!-- Personaliza el color del texto del tooltip -->
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Puedes ajustar el tamaño del texto aquí si es necesario -->
+        <item name="android:textSize">14sp</item>
+    </style>
+
 
 </resources>
 

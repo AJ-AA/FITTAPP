@@ -4,7 +4,17 @@
         <item>English</item>
         <item>Español</item>
     </array>
+<string-array name="Mode">
+    <item>Oscuro/Dark</item>
+    <item>Claro/Light</item>
+</string-array>
+<string-array name="notifications">
+    <item>Si/Yes</item>
+    <item>No/No</item>
+</string-array>
+
 </resources>
+
 
 
     <!--//NP:141350 ARENAL ARMESTO ANTONIO JOSE-->

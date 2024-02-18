@@ -16,6 +16,18 @@
     <string name="english">Inglés</string>
     <string name="spanish">Español</string>
     <string name="salute">Hola usuario: </string>
+    <string name="Share_Text">Compartir</string>
+    <string name="Open_Web_Page">Google</string>
+    <string name="Make_Call">Llamada</string>
+    <string name="app_name">FITTAPP</string>
+    <string name="modo_oscuro">Modo Oscuro</string>
+    <string name="oscuro_activado">Modo oscuro activado</string>
+    <string name="oscuro_desactivado">Modo oscuro desactivado</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="notif_activadas">Notificaciones activadas</string>
+    <string name="notif_desactivadas">Notificaciones desactivadas</string>
+    <string name="idioma">Idioma</string>
+    <string name="seleccionar_idioma">Seleccionar Idioma</string>
 
 
 
