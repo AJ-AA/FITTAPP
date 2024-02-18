@@ -1,7 +1,3 @@
-Feedback1 Programación Dirigida Por Eventos:
-
-NP:141350 Antonio José Arenal Armesto
-
 
 Requisitos y funcionalidades:
 
